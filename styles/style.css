@@ -11,6 +11,10 @@ body {
     margin-bottom: 204px;
 }
 
+.title-offset {
+    margin-bottom: 120px;
+}
+
 .title {
     text-align: center;
     text-transform: uppercase;
@@ -74,3 +78,105 @@ body {
     width: 100%;
     padding-top: 13px;
 }
+
+.card {
+    width: 100%;
+    height: 365px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    border-radius: 0%;
+    margin-bottom: 30px;
+}
+
+.card-big {
+    height: 420px;
+}
+
+.card-first {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    color: white;
+    padding: 55px 65px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+
+.first-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-title {
+    text-transform: uppercase;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 37px;
+    word-spacing: 6px;
+}
+
+.content-text {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400px;
+}
+
+.content-link {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.second-content {
+    width: 100%;
+    height: 100%;
+    background: #70f4e9;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    display: none;
+    color: black;
+    padding: 62px 115px 55px 65px;
+    box-sizing: border-box;
+}
+
+.card-first:hover > .second-content {
+    display:block;
+}
+
+.text-content {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card10 {
+    background-image: url('../images/card1.jpg');
+}
+
+.card1 {
+    background-image: url('../images/card2.jpg');
+}
+
+.card2 {
+    background-image: url('../images/card3.jpg');
+}
+
+.card3 {
+    background-image: url('../images/card4.jpg');
+}
+
+.card4 {
+    background-image: url('../images/card5.jpg');
+}
+
+.card7 {
+    background-image: url('../images/card7.jpg');
+}  
