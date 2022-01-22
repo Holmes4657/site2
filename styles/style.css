@@ -2,13 +2,18 @@ body {
     margin: 0;
 }
 
+.row {
+    padding: 0;
+    margin: 0;
+}
+
 .header {
     background: #eff0f2;
 }
 
 .header-nav {
-    padding-top: 64px;
-    margin-bottom: 204px;
+    padding-top: 7vh;
+    margin-bottom: 23vh;
 }
 
 .title-offset {
@@ -30,16 +35,19 @@ body {
     padding: 7px 10px;
 }
 
-.header-button{
+.header-button {
     width: calc(100% + 60px);
     height: 52px;
     border: 2px solid #777879;
     border-radius: 2px;
     text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-family: 'Montserrat', sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+    .header-button {
+        max-width: 100%;
+    }
 }
 
 .btn-img {
@@ -49,8 +57,8 @@ body {
 }
 
 .buttons {
-    margin-top: 150px;
-    padding-bottom: 195px;
+    margin-top: 17vh;
+    padding-bottom: 22vh;
 }
 
 .featured {
@@ -146,8 +154,8 @@ body {
     box-sizing: border-box;
 }
 
-.card-first:hover > .second-content {
-    display:block;
+.card-first:hover>.second-content {
+    display: block;
 }
 
 .text-content {
@@ -161,7 +169,11 @@ body {
     position: relative;
 }
 
-.gamburger:hover > .menu {
+.gamburger > i {
+    font-size: 1.7rem;
+}
+
+.gamburger:hover>.menu {
     display: flex;
 }
 
@@ -221,4 +233,4 @@ body {
 
 .card7 {
     background-image: url('../images/card7.jpg');
-}  
+}
