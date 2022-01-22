@@ -17,7 +17,7 @@ body {
 }
 
 .title-offset {
-    margin-bottom: 120px;
+    margin-bottom: 13vh;
 }
 
 .title {
@@ -68,17 +68,10 @@ body {
 
 .title-big {
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 38px;
-    text-transform: uppercase;
-    color: #343434;
-    margin-bottom: 17px;
 }
 
 .title-small {
-    text-transform: uppercase;
-    font-size: 17px;
-    color: #888888;
+    color: #616161;
     font-family: 'Merriweather', serif;
 }
 
@@ -96,6 +89,7 @@ body {
     border: none;
     border-radius: 0%;
     margin-bottom: 30px;
+    overflow: scroll;
 }
 
 .card-big {
@@ -107,7 +101,7 @@ body {
     height: 100%;
     background: rgba(0, 0, 0, .7);
     color: white;
-    padding: 55px 65px;
+    padding: 6.1vh 7.2vw;
     box-sizing: border-box;
     display: flex;
     align-items: flex-end;
@@ -123,14 +117,14 @@ body {
     text-transform: uppercase;
     font-family: 'Merriweather', serif;
     font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 37px;
+    font-size: 1.25em;
+    margin-bottom: 3vh;
     word-spacing: 6px;
 }
 
 .content-text {
     font-family: 'Raleway', sans-serif;
-    font-weight: 400px;
+    overflow: scroll;
 }
 
 .content-link {
@@ -150,16 +144,15 @@ body {
     top: 0;
     display: none;
     color: black;
-    padding: 62px 115px 55px 65px;
+    padding: 6.9vh 7vw 6.1vh 7vw;
     box-sizing: border-box;
 }
 
-.card-first:hover>.second-content {
+.card-first:hover .card-first:active > .second-content {
     display: block;
 }
 
 .text-content {
-    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
