@@ -1,10 +1,6 @@
-body {
+body, p, .row {
     margin: 0;
-}
-
-.row {
     padding: 0;
-    margin: 0;
 }
 
 .header {
@@ -12,12 +8,8 @@ body {
 }
 
 .header-nav {
-    padding-top: 7vh;
-    margin-bottom: 23vh;
-}
-
-.title-offset {
-    margin-bottom: 13vh;
+    padding-top: 64px;
+    margin-bottom: 188px;
 }
 
 .title {
@@ -35,6 +27,11 @@ body {
     padding: 7px 10px;
 }
 
+.buttons {
+    margin-top: 137px;
+    padding-bottom: 146px;
+}
+
 .header-button {
     width: calc(100% + 60px);
     height: 52px;
@@ -44,21 +41,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-@media only screen and (max-width: 768px) {
-    .header-button {
-        max-width: 100%;
-    }
-}
-
 .btn-img {
     position: relative;
     left: 0;
     top: 27px;
-}
-
-.buttons {
-    margin-top: 17vh;
-    padding-bottom: 22vh;
 }
 
 .featured {
@@ -66,13 +52,22 @@ body {
     padding-bottom: 125px;
 }
 
+.title-offset {
+    margin-bottom: 117px;
+}
+
 .title-big {
+    margin: 0;
     font-family: 'Montserrat', sans-serif;
+    line-height: 0.737;
 }
 
 .title-small {
-    color: #616161;
+    margin: 0;
+    color: #898989;
     font-family: 'Merriweather', serif;
+    font-size: 17px;
+    line-height: 1.647;
 }
 
 .card-img {
@@ -89,7 +84,7 @@ body {
     border: none;
     border-radius: 0%;
     margin-bottom: 30px;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 .card-big {
@@ -101,7 +96,6 @@ body {
     height: 100%;
     background: rgba(0, 0, 0, .7);
     color: white;
-    padding: 6.1vh 7.2vw;
     box-sizing: border-box;
     display: flex;
     align-items: flex-end;
@@ -111,44 +105,10 @@ body {
 .first-content {
     display: flex;
     flex-direction: column;
+    padding: 60px 48px;
 }
 
-.content-title {
-    text-transform: uppercase;
-    font-family: 'Merriweather', serif;
-    font-weight: bold;
-    font-size: 1.25em;
-    margin-bottom: 3vh;
-    word-spacing: 6px;
-}
-
-.content-text {
-    font-family: 'Raleway', sans-serif;
-    overflow: scroll;
-}
-
-.content-link {
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 18px;
-}
-
-.second-content {
-    width: 100%;
-    height: 100%;
-    background: #70f4e9;
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    display: none;
-    color: black;
-    padding: 6.9vh 7vw 6.1vh 7vw;
-    box-sizing: border-box;
-}
-
-.card-first:hover .card-first:active > .second-content {
+.first-content:hover + .second-content {
     display: block;
 }
 
@@ -158,50 +118,64 @@ body {
     justify-content: space-between;
 }
 
-.gamburger {
-    position: relative;
+.content-title {
+    text-transform: uppercase;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.45;
+    padding-bottom: 24px;
+} 
+
+.content-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 1.563;
+    color: #9f9f9f;
 }
 
-.gamburger > i {
-    font-size: 1.7rem;
+.content-link {
+    font-family: 'Raleway', sans-serif;
+    line-height: 4.474;
+    text-transform: uppercase;
+    font-size: 19px;
 }
 
-.gamburger:hover>.menu {
-    display: flex;
-}
-
-.menu {
-    background-color: white;
-    box-shadow: -5px 5px 10px 0 gray;
-    width: 200px;
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    left: -195px;
-    top: 25px;
-}
-
-.menu-item {
-    color: black;
-    text-decoration: none;
+.second-content {
     width: 100%;
-    height: 50px;
-    border-bottom: 1px solid lightgray;
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-    box-sizing: border-box;
-    transition: 0.4s;
-}
-
-.menu-item:hover {
+    height: 100%;
+    padding: 60px 48px;
+    background: #70f4e9;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    display: none;
     color: black;
-    text-decoration: none;
-    background-color: gray;
+    box-sizing: border-box;
 }
 
-.menu-item::last-child {
-    border: none;
+@media only screen and (max-width: 768px) {
+    .header-nav {
+        margin-bottom: 64px;
+    }
+
+    .title-offset {
+        margin-bottom: 64px;
+    }
+
+    .header-button {
+        max-width: 100%;
+    }
+
+    .buttons {
+        margin-top: 64px;
+        padding-bottom: 64px;
+    }
+
+    .featured {
+        padding: 64px 0;
+    }
 }
 
 .card10 {
